@@ -1,0 +1,26 @@
+.flexRowContent--main-header {
+	justify-content: space-between;
+	background: #212121 !important;
+}
+
+.flexRowContent--main-header-mobile {
+	justify-content: space-between;
+	background: #212121 !important;
+}
+
+
+
+.flexRowContent--menu-row {
+  background-color: #424242;
+	bottom: 0;
+  color: #fff;
+	position: fixed;
+	z-index: 3;
+}
+.flexRowContent--menu-row-mobile {
+  background-color: #424242;
+	bottom: 0;
+  color: #fff;
+	position: fixed;
+	z-index: 3;
+}

@@ -1,0 +1,13 @@
+.buttonText{
+}
+.button{
+}
+
+:global(.vtex-button--containerProductButtons){
+	background: #59FF00;
+	color: #212121;
+	width: 60%;
+	font-size: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
