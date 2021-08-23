@@ -1,0 +1,12 @@
+.sliderLayoutContainer {
+	background: #303030;
+	border-radius: 20px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: 15px;
+	width: 70%;
+}
+
+.imageElement--carousel{
+	border-radius: 20px;
+}

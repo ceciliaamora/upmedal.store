@@ -1,0 +1,258 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+
+  "sticky-layout#desktop": {
+    "props": {
+		"blockClass":"full-header"
+    },
+    "children": ["flex-layout.row#desktop", "tab-layout#home"]
+  },
+
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+			"blockClass":"main-header"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "mobileHref": "/",
+      "url": "assets/upmedal.png",
+			"mobileUrl": "assets/upmedal.png",
+      "width": "120"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "drawer": {
+    "children": []
+  },
+
+	"tab-layout#home": {
+		"children": ["tab-list#home", "tab-content#home"],
+		"props": {
+		"blockClass": "tabStyle"
+		}
+	},
+
+	"tab-list#home": {
+		"children": ["tab-list.item#home1", "tab-list.item#home2","tab-list.item#home3", "tab-list.item#home4","tab-list.item#home5", "tab-list.item#home6","tab-list.item#home7", "tab-list.item#home8", "tab-list.item#home9","tab-list.item#home10"],
+		"props": {
+			"blockClass": "tab-items"
+		}
+	},
+
+	"tab-list.item#home1": {
+		"props": {
+			"tabId": "promocao",
+			"label": "PROMOÇÃO"
+		}
+	},
+
+	"tab-list.item#home2": {
+		"props": {
+			"tabId": "corinthians",
+			"label": "CORINTHIANS"
+		}
+	},
+
+	"tab-list.item#home3": {
+		"props": {
+			"tabId": "palmeiras",
+			"label": "PALMEIRAS"
+		}
+	},
+
+	"tab-list.item#home4": {
+		"props": {
+			"tabId": "signos",
+			"label": "Signos"
+		}
+	},
+
+	"tab-list.item#home5": {
+		"props": {
+			"tabId": "divertidos",
+			"label": "Divertidos"
+		}
+	},
+
+	"tab-list.item#home6": {
+		"props": {
+			"tabId": "seteMaravilhas",
+			"label": "7 Maravilhas"
+		}
+	},
+
+	"tab-list.item#home7": {
+		"props": {
+			"tabId": "guerreiros",
+			"label": "Guerreiros"
+		}
+	},
+
+	"tab-list.item#home8": {
+		"props": {
+			"tabId": "album1",
+			"label": "Álbum 1"
+		}
+	},
+
+	"tab-list.item#home9": {
+		"props": {
+			"tabId": "album2",
+			"label": "Álbum 2"
+		}
+	},
+
+	"tab-list.item#home10": {
+		"props": {
+			"tabId": "album3",
+			"label": "Álbum 3"
+		}
+	},
+
+	"tab-content#home": {
+		"children": ["tab-content.item#home1", "tab-content.item#home2", "tab-content.item#home3", "tab-content.item#home4", "tab-content.item#home5", "tab-content.item#home6", "tab-content.item#home7", "tab-content.item#home8", "tab-content.item#home9", "tab-content.item#home10"],
+		"props":{
+			"blockClass": "tab-items"
+		}
+	},
+
+	"tab-content.item#home1": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "promocao"
+		}
+	},
+
+	"tab-content.item#home2": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "corinthians"
+		}
+	},
+
+	"tab-content.item#home3": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "palmeiras"
+		}
+	},
+
+	"tab-content.item#home4": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "signos"
+		}
+	},
+
+	"tab-content.item#home5": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "divertidos"
+		}
+	},
+
+	"tab-content.item#home6": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "seteMaravilhas"
+		}
+	},
+
+	"tab-content.item#home7": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "guerreiros"
+		}
+	},
+
+	"tab-content.item#home8": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "album1"
+		}
+	},
+
+	"tab-content.item#home9": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "album2"
+		}
+	},
+
+	"tab-content.item#home10": {
+		"children": ["rich-text#home1"],
+		"props": {
+			"tabId": "album3"
+		}
+	},
+
+	"rich-text#home1": {
+		"props": {
+			"textPosition": "CENTER"
+		}
+	}
+}

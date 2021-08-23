@@ -1,0 +1,8 @@
+.listContainer--tab-items{
+	flex-wrap: nowrap;
+	overflow: hidden;
+	font-size: 1px;
+	justify-content: flex-start;
+	background-color: #212121;
+	color: #fff;
+}

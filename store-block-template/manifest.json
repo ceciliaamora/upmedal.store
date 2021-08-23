@@ -1,0 +1,22 @@
+{
+  "vendor": "hiringcoders2021",
+  "name": "react-blocks",
+  "version": "0.0.1",
+  "title": "Whatsapp",
+  "description": "Whatsapp button",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "1.x",
+    "vtex.store-newsletter": "1.x",
+    "vtex.native-types": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.pixel-manager": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

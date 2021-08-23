@@ -1,0 +1,24 @@
+.productContainer {
+	background: #424242;
+	justify-content: center;
+	text-align: center !important;
+
+}
+
+.brandName{
+	color: #fff;
+	font-size: 70%;
+	text-transform: uppercase;
+	text-align: center;
+	margin-left: auto;
+	margin-right:auto;
+	justify-content: center;
+}
+
+
+.currencyDecimal{
+	color: #59FF00;
+	font-weight: bold;
+	width: 60%;
+	margin-left: 20%;
+}

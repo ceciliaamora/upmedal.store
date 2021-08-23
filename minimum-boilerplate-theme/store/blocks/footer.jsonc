@@ -1,0 +1,73 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop"
+    ]
+  },
+
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+		"social-networks"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+
+  "social-networks": {
+    "props": {
+			"blockClass": "footer-items",
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+
+  "rich-text#footer": {
+    "props": {
+      "blockClass": "footer"
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-1-mobile"
+    ]
+  },
+
+
+  "flex-layout.row#footer-1-mobile": {
+    "children": [
+			"availability-subscriber",
+      "social-networks",
+			"whatsapp-button"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  }
+}
